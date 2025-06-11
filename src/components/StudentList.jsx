@@ -22,7 +22,12 @@ const StudentList = (props) => {
 };
 
 StudentList.propTypes = {
-    students: PropTypes.array.isRequired
+    students: PropTypes.arrayOf(
+        PropTypes.shape({
+            nameData: PropTypes.string.isRequired,
+            emailData: PropTypes.string.isRequired,
+        })
+    ),
 };
 
 export default StudentList;

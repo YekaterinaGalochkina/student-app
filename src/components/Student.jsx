@@ -3,7 +3,6 @@ import { useState } from "react";
 import './Student.css';
 
 const Student = (props) => {
-
     const [isPresent, setIsPresent] = useState(false);
 
     const togglePresence = () => {
